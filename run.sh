@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+# https://www.databricks.com/br/glossary/hadoop-distributed-file-system-hdfs
+
 HADOOP_INSTALL_BASE_PATH="/workspaces/hadoop-ins"
 
 if (!(test -d $HADOOP_INSTALL_BASE_PATH)); then
