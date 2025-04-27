@@ -4,11 +4,11 @@ services:
     container_name: namenode
     restart: always
     ports:
-      - 9870:9870    # NameNode Web UI
-      - 9000:9000    # HDFS RPC
+      - 9870:9870 # NameNode Web UI
+      - 9000:9000 # HDFS RPC
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
-      - ./src:/opt/hadoop-py/src
+      - ./wordcount/target/wordcount-1.0-SNAPSHOT.jar:/opt/hadoop-py/src/wordcount.jar
       - ./input:/opt/hadoop-py/input
     environment:
       - CLUSTER_NAME=test

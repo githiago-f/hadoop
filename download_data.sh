@@ -8,3 +8,5 @@ curl -L $zipfile -o ./input.zip
 unzip ./input.zip
 rm ./input.zip
 cd ..
+
+docker compose up -d
