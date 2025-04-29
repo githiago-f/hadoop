@@ -7,7 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 /**
- * Reducer class: sums all counts for a given word.
+ * Reducer class: sums all counts for a given sales agent.
  */
 public class IntSumReducer
     extends Reducer<Text, IntWritable, Text, IntWritable> {
